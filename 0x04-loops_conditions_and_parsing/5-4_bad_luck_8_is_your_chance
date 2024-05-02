@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#Displays 'bad luck' on the 4th iteration, 'googd luck on the 8th iteration and 'Best School for the other iterations
+counter=0
+LIMIT=10
+
+while [ "$counter" -lt "$LIMIT" ]
+do
+	if [ "$counter" == 3 ]
+	then
+		echo "bad luck"
+	
+	elif [ "$counter" == 7 ]
+	then
+		echo "good luck"
+	
+	else
+		echo "Best School"
+	fi
+	counter=$((counter + 1))
+done
