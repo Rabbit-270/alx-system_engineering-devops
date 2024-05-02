@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#Displays 'bad luck from China'on the 4th iteration, 'bad luck from Japan' on the 9th iteration, 'bad luck from Italy; on the 17th.
+counter=1
+LIMIT=20
+
+while [ "$counter" -le "$LIMIT" ]
+do
+	echo "$counter"
+	if [ "$counter" == 4 ]
+	then
+		echo "bad luck from China"
+	elif [ "$counter" == 9 ]
+	then
+		echo "bad luck from Japan"
+	elif [ "$counter" == 17 ]
+	then
+		echo "bad luck from Italy"
+	fi
+	counter=$((counter+1))
+done
