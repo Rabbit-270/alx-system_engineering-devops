@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#Displays time for 12 hrs and 59 minutes
+HRS=0
+MIN=1
+
+while [ "$HRS" -lt 13 ]
+do
+	echo "Hour: $HRS"
+	HRS=$((HRS + 1))
+	while [ "$MIN" -lt 60 ]
+	do
+	      echo "$MIN"
+	      MIN=$((MIN+1))
+	done
+done
