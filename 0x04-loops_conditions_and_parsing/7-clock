@@ -12,4 +12,5 @@ do
 	      echo "$MIN"
 	      MIN=$((MIN+1))
 	done
+	MIN=1
 done
