@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#This script prints Best School using a for-loop 10 times
 
 statements=('Best School' 'Best School' 'Best School' 'Best School' 'Best School' 'Best School' 'Best School' 'Best School' 'Best School' 'Best School')
 for i in 0 1 2 3 4 5 6 7 8 9
