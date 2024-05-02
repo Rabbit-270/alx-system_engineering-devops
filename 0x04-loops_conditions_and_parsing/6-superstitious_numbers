@@ -6,15 +6,19 @@ LIMIT=20
 while [ "$counter" -le "$LIMIT" ]
 do
 	echo "$counter"
-	if [ "$counter" == 4 ]
-	then
+	case "$counter" in
+	    4)
 		echo "bad luck from China"
-	elif [ "$counter" == 9 ]
-	then
+		;;
+	    9)
 		echo "bad luck from Japan"
-	elif [ "$counter" == 17 ]
-	then
+		;;
+	    17)
 		echo "bad luck from Italy"
-	fi
-	counter=$((counter+1))
+		;;
+	    *)
+		;;
+	esac
+	
+	counter=$((counter + 1))
 done
