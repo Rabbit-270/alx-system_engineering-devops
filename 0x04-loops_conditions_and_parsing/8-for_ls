@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#Displays all the files in a directory
+FILES=$(ls)
+
+for file in $FILES
+do
+    length=${#file}
+    index=0
+    for((ind=0; ind<length; ind++))
+    do
+	char="${file:ind:1}"
+	if [ "$char" == "-" ] 
+	then
+	    
+	    index="$ind"
+	    start_index=$((index+2))
+	    end_index="$length"
+	    final_string=$(cut -c "$start_index"-"$end_index"<<<"$file")
+	    echo "$final_string"
+	fi
+    done
+done
