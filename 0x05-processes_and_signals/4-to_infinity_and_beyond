@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #Displays 'To infinity and beyond' indefinitely with a sleep of 2 in between
-BASHPID=$(pidof 4-to_infinity_and_beyond)
-echo "$BASHPID"
+
 loop=1
 while [ "$loop" == 1 ]
 do
