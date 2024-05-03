@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Displays pid of processes that have the word 'bash'
+# shellcheck disable=SC2009
+top | O | COMMAND=bash
