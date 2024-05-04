@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Displays the contents of the current directory in a list format
 
-FILES=$(ls)
+FILES=$(ls ./*)
 for file in $FILES
 do
     length_of_file="${#file}"
