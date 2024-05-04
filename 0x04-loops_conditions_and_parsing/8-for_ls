@@ -1,22 +1,23 @@
 #!/usr/bin/env bash
-#Displays all the files in a directory
-FILES=$(ls)
+#Displays the contents of the current directory in a list format
 
+FILES=$(ls)
 for file in $FILES
 do
-    length=${#file}
-    index=0
-    for((ind=0; ind<length; ind++))
+    length_of_file="${#file}"
+    for((i=0; i<length_of_file; i++))
     do
-	char="${file:ind:1}"
-	if [ "$char" == "-" ] 
+	char="${file:i:1}"
+	if [ "$char" == "-" ]
 	then
-	    
-	    index="$ind"
+	    index="$i"
 	    start_index=$((index+2))
-	    end_index="$length"
+	    end_index=$length_of_file
 	    final_string=$(cut -c "$start_index"-"$end_index"<<<"$file")
-	    echo "$final_string"
 	fi
     done
+    echo "$final_string"
 done
+
+
+    
