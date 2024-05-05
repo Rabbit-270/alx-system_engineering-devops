@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Shows me information about school file
+FileName="school"
+RESPONSE=$(find $FileName)
+if [[ $RESPONSE = "$FileName" ]]
+then
+    echo $FileName file exists
+    file_contents=$(cat $FileName)
+    if [[ -z $file_contents ]]
+    then
+	echo $FileName is empty
+    else
+	echo $FileName is not empty
+    fi
+    
+else
+    echo $FileName does not exist
+fi

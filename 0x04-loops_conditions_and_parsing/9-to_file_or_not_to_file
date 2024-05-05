@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Shows me information about school file
+FileName="school"
+RESPONSE=$(find $FileName)
+if [[ $RESPONSE = "$FileName" ]]
+then
+    echo $FileName file exists
+    file_contents=$(cat $FileName)
+# If the file is emoty or not
+    if [[ -z $file_contents ]]
+    then
+	echo $FileName is empty
+    else
+	echo $FileName is not empty
+    fi
+    # regular file test
+    if [[ -f $FileName ]]
+    then
+	echo $FileName is a regular file
+    else
+	echo $FileName is not a regular file
+    fi
+    
+else
+    echo $FileName does not exist
+fi
