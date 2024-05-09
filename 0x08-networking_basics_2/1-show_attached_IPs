@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Displays all ipV4 addresses on my computer
+
+hostname --all-ip-addresses
