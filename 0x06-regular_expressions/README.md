@@ -1,1 +1,1 @@
-This project will play around with regular expressions zika Ruby programming language
+This project will play around with regular expressions using Ruby programming language

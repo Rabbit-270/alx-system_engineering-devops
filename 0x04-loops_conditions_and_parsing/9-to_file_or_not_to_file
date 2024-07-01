@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Shows me information about school file
 FileName="school"
-RESPONSE=$(find $FileName)
+RESPONSE=$(find -q $FileName)
 if [[ $RESPONSE = "$FileName" ]]
 then
     echo $FileName file exists

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Reads data from a file
+
+while IFS= read -r line
+do
+    echo "$line"
+done < school

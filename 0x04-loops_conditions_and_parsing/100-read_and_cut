@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Reads data from a file
+
+while IFS= read -r line
+do
+    COLONS=5
+    INDEX=0
+    WORD=''
+    while [[ $COLONS -ne 0 ]]
+    do
+	if [[ ${line:INDEX:1} -ne ":" ]]
+	then
+	    WORD+="${line:INDEX:1"
+	    
+done < school
